@@ -1,69 +1,98 @@
 body, html {
-    color: #fff;
-    text-align: center;
-    background-color: #159957;
-    background: -webkit-radial-gradient(20% 100%, #fccc63 10px, #fbad50 150px, #e95950, #cd486b, #bc2a8d, #8a3ab9, #4c68d7);
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+  color: #fff;
+  text-align: center;
+  background-color: #159957;
+  background: -webkit-radial-gradient(20% 100%, #fccc63 10px, #fbad50 150px,
+  #e95950, #cd486b, #bc2a8d, #8a3ab9, #4c68d7);
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    text-align: center;
-    padding-top: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px 0px 20px 0px;
 }
 
 p {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    margin-right: 40px;
-    display: inline;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 40px;
+  display: inline;
 }
 
 .botao {
-    display:inline-flex;
-    background-color: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    border-width: 4px;
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  margin: 8px;
+  text-decoration: none;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 #rdp {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: small;
-    padding-top: 30px;
-    display: block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: small;
+  padding-top: 30px;
+  display: block;
 }
 
- a {
-    color: rgba(255, 255, 255, 0.7);
+a {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .botao:hover {
-    color: black;
-    background: #fde910;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+  color: white;
+  background: #ffc107;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
- a[href^="https"] {
-   display: inline-grid;
-   margin: 10px;
-   background: #3c5a99;
-   margin-top: 30px;
-   border-radius: 10%;
- }
+.botao:hover[href^="https"] {
+  color: white;
+  background: #3c5a99;
+}
 
-table {
-  text-align: left;
+a[href^="https"] {
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  background: #3c5a99;
+  margin-top: 30px;
+  color: white;
+}
+
+.conteudo {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aula {
+  float: left;
+  padding-top: 12px;
+}
+
+.link {
+  float: right;
+}
+.aulas {
+  clear: both;
+}
+.rodapé {
+  margin: 10px 10px;
   padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+.facebook {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
