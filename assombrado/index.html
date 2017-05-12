@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Assombrado</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite|Aldrich">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imgs/favicon.png">
+  </head>
+  <body>
+    <header>
+      <h1>Blog Assombrado</h1>
+      <h2>Notícias e reportagens sobre o desconhecido</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicial</a></li>
+          <li><a href="#ovnis.html">UFOlogia</a></li>
+          <li><a href="#fantasmas.html">Fantasmas</a></li>
+          <li><a href="#lendas.html">Lendas</a></li>
+          <li><a href="#lugares-misteriosos.html">Lugares Misteriosos</a></li>
+          <li><a href="#especiais.html">Especiais</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="conteudo-principal" class="desaparecido">
+      <aside>
+        <h1>Nuvem de <em>tags</em></h1>
+        <span class="tag-3">UFO</span>
+        <span class="tag-1">OVNI</span>
+        <span class="tag-2">Avistamentos</span>
+        <span class="tag-1">Contato de primeiro grau</span>
+        <span class="tag-2">Assombrações</span>
+        <span class="tag-3">Local mal-assombrado</span>
+        <span class="tag-1">Saci</span>
+      </aside>
+
+      <section id="posts-principais">
+        <h1>Principais Postagens</h1>
+        <article>
+          <img src="imgs/arvores.jpg" alt="">
+          <h2 class="titulo">Conheça a Enigmática "Crooked Forest": Centenas de Árvores
+            em uma Floresta Foram Entortadas por "Forças Misteriosas", na Polônia?</h2>
+          <time datetime="2017-05-09">09 de maio de 2017</time>
+        </article>
+        <article>
+          <img src="imgs/ursa.jpg" alt="">
+          <h2 class="titulo">O Mistério de Szenja: Uma Ursa Polar Morreu de "Coração Partido"
+            ao ser Separada de Sua Companheira no SeaWorld, nos Estados Unidos?</h2>
+          <time datetime="2017-05-09">07 de maio de 2017</time>
+        </article>
+      </section>
+
+      <section id="posts-mais-recentes">
+        <h1>Últimas Postagens</h1>
+        <article class="post novidade">
+          <time datetime="2017-05-09">09/05/2017</time>
+          <h2 class="titulo">O Projeto Manhatan e a Construção das
+            Primeiras Bombas Atômicas</h2>
+        </article>
+        <article class="post novidade">
+          <time datetime="2017-05-09">09/05/2017</time>
+          <h2 class="titulo">A Misteriosa "Vulture Stone": Um "Pilar de Pedra"
+            Provocou um Verdadeiro Caos na Terra Há 13 Mil Anos?</h2>
+        </article>
+        <article>
+          <time datetime="2017-05-08">08/05/2017</time>
+          <h2 class="titulo">O "Fantasma de um Homem" Subindo uma Escadaria
+            Apareceu em uma Mansão "Mal-Assombrada" do Século XVII, na
+            Inglaterra?</h2>
+        </article>
+        <article>
+          <time datetime="2017-04-16">16/04/2017</time>
+          <h2 class="titulo">Sereias: Lenda, Fotos, Vídeos, Relatos e
+            Análises. Será que elas existem?</h2>
+        </article>
+      </section>
+    </section>
+
+    <footer>
+      <img class="logo-rodape" src="imgs/logo-assombrado.png"
+        alt="Logo do canal do Youtube Assombrado">
+      <p class="texto-rodape">
+        © O nome "Assombrado", a logomarca, a vinheta e as imagens são todos
+        propriedade do <a href="https://www.youtube.com/user/AssombradoBlog">
+        Canal Assombrado</a> do Youtube e do blog
+        <a href="http://assombrado.com.br">AssombradO.com.br</a>
+      </p>
+    </footer>
+
+    <div id="lateral" class="backdrop">
+      <video src="videos/vinheta.mp4" autoplay>
+      </video>
+    </div>
+
+    <script>
+      // faz o vídeo desaparecer de leve assim que terminar
+      let tempo = 11000;  // 11s, duração do vídeo
+      setTimeout(() => {
+        document.getElementsByClassName('backdrop')[0].classList.add('desaparecido')
+        document.getElementById('conteudo-principal').classList.remove('desaparecido')
+      }, tempo);
+    </script>
+  </body>
+</html>
