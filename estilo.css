@@ -2,12 +2,11 @@ body, html {
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background: -webkit-radial-gradient(20% 100%, #fccc63 10px, #fbad50 150px,
-  #e95950, #cd486b, #bc2a8d, #8a3ab9, #4c68d7);
+  background: -webkit-radial-gradient(20% 100%, #fccc63 10px, #fbad50 150px, #e95950, #cd486b, #bc2a8d, #8a3ab9, #4c68d7);
   margin: 0px;
   padding: 0px;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   white-space: nowrap;
@@ -57,6 +56,7 @@ a {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+
 .botao:hover[href^="https"] {
   color: white;
   background: #3c5a99;
@@ -85,6 +85,7 @@ main {
 .link {
   float: right;
 }
+
 article {
   clear: both;
 }
@@ -94,6 +95,7 @@ footer {
   margin: 10px auto;
   padding: 10px;
 }
+
 .facebook {
   width: 200px;
   margin-left: auto;

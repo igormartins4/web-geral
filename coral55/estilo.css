@@ -1,0 +1,164 @@
+/* Importa o arquivo CSS que importa a fonte Ravie */
+
+
+/* Um arquivo CSS pode importar outro usando @import */
+
+@import "fonts/ravie.css";
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* Coloque aqui o código CSS para fazer a atividade */
+
+#recipiente {
+  background-image: linear-gradient(#F6F1B2, #4599B2);
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  border-right: solid 1px #D3D3D3;
+  border-left: solid 1px #D3D3D3;
+}
+
+header {
+  text-align: right;
+  float: right;
+  margin-left: 154px;
+  padding-right: 30px;
+}
+
+header h1, h2 {
+  float: right;
+  margin-left: -154px;
+  padding-right: 40px;
+}
+
+header h1, h2 {
+  margin-bottom: 0;
+}
+
+header h2 {
+  margin-top: 0;
+  margin-right: -10px;
+}
+
+h1 {
+  font-family: "Ravie", sans-serif;
+  font-size: 36px;
+  color: #E90C0C;
+  font-style: normal;
+  font-weight: normal;
+}
+
+header h2 {
+  font-family: "Arial", "OpenSans", sans-serif;
+  font-size: 24px;
+  color: #333333;
+  font-weight: normal;
+}
+
+header h2 span {
+  color: #D027AA;
+}
+
+#lateral {
+  width: 154px;
+  float: left;
+  position: absolute;
+  height: 100%;
+}
+
+#lateral #siri {
+  top: 7px;
+  left: -10px;
+  position: relative;
+  display: block;
+}
+
+#lateral h2 {
+  transform: rotate(-90deg);
+  font-family: "Verdana", "OpenSans", sans-serif;
+  font-size: 48px;
+  color: #333333;
+  /*top: 50%;
+  margin-top: -140px;*/
+  line-height: 280px;
+  display: table;
+  position: relative;
+  left: 58px;
+}
+
+#lateral #bolhas {
+  bottom: 125px;
+  right: 20px;
+  position: absolute;
+}
+
+#lateral #peixe {
+  bottom: 0;
+  left: -44px;
+  position: absolute;
+}
+
+#cardapio {
+  margin-left: 154px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 646px;
+  border: solid 1px #AAC0AE;
+  clear: right;
+  box-sizing: border-box;
+  padding: 0 20px 50px;
+}
+
+#cardapio h3 {
+  font-family: "Verdana", "OpenSans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  font-weight: bolder;
+}
+
+#cardapio article {
+  font-family: "Verdana", "OpenSans", sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+  line-height: 2em;
+  margin: 0;
+}
+
+#cardapio .preco {
+  font-family: "Verdana", "OpenSans", sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+  line-height: 2em;
+  float: right;
+}
+
+footer {
+  position: relative;
+  height: 116px;
+}
+
+footer img {
+  bottom: 25px;
+  right: 15px;
+  top: 46px;
+  position: absolute;
+}
+
+#ticket {
+  position: fixed;
+  top: 50%;
+  margin-top: -84px;
+  left: -69px;
+  transition: left 100ms ease-out;
+}
+
+#ticket:hover {
+  left: 0;
+}
