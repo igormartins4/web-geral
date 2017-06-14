@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background-color: #d7ccc8;
+}
+
+h1, h2 {
+  font-family: 'Freckle Face', cursive;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+header {
+  background-color: #A1887F;
+  color: whitesmoke;
+  padding: 0.25em;
+  margin-bottom: 1em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header img {
+  vertical-align: bottom;
+  padding: 0.3em;
+  margin-right: 0.5em;
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 50%;
+  border: 2px dashed #a0887f;
+  animation: rolando .4s ease-in-out 0s infinite alternate;
+}
+
+@keyframes rolando {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate( 2deg);
+  }
+}
+
+header h1 {
+  margin: 0;
+  text-shadow: 2px 2px 1px #42312b;
+  display: inline-block;
+}
+
+.paper {
+  font-family: monospace;
+  font-size: 16px;
+  color: #282625;
+  margin: 0 auto;
+  width: 600px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
+
+.paper {
+  padding: 37px 55px 27px;
+  position: relative;
+  border: 1px solid #B5B5B5;
+  background: white;
+  background: linear-gradient(to top, #DFE8EC 0%, white 8%) 0 62px;
+  background-size: 100% 30px;
+  line-height: 30px;
+}
+
+.paper::before {
+  content: "";
+  z-index: -1;
+  margin: 0 1px;
+  width: 706px;
+  height: 10px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background: white;
+  border: 1px solid #B5B5B5;
+}
+
+.paper::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  top: 0;
+  left: 39px;
+  bottom: 0;
+  border-left: 1px solid #F8D3D3;
+}
+
+.paper p, .paper h2, .paper div {
+  margin-top: 26px;
+  margin-bottom: 28px;
+}
+
+.matematica {
+  font-style: italic;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 5em;
+}
+
+#coeficientes-da-equacao {
+  position: relative;
+  border: 1px solid silver;
+  border-radius: 0.25em;
+  background-color: rgba(250, 230, 255, .5);
+  padding: 1.5em 1em 1em;
+}
+
+#coeficientes-da-equacao::before {
+  content: "Coeficientes";
+  position: absolute;
+  left: 1em;
+  top: -0.5em;
+  background-color: silver;
+  border: 1px solid silver;
+  font-size: 0.75em;
+  line-height: 1em;
+  padding: 0.15em;
+  border-radius: 0.15em;
+}

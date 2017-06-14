@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Resolvendo Equações</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Freckle+Face">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imgs/icone-funcao.png">
+  </head>
+  <body>
+    <header>
+      <img src="imgs/icone-funcao.png" alt="Ícone de função matemática">
+      <h1>Equações</h1></header>
+    <main class="paper">
+      <h2>Resolvendo equações de 2º grau</h2>
+      <p>Se você tem uma equação na forma
+        <span class="matematica">ax<sup>2</sup> + bx + c</span>, podemos
+        resolvê-la para você!</p>
+      <p>Coloque os valores de <span class="matematica">a</span>,
+        <span class="matematica">b</span> e <span class="matematica">c</span>
+        abaixo e clique no botão "Resolver!"</p>
+      <section id="coeficientes-da-equacao">
+        <label for="coeficiente-a" class="matematica">a: </label>
+        <input id="coeficiente-a" type="number" value="1">
+        <label for="coeficiente-b" class="matematica">b: </label>
+        <input id="coeficiente-b" type="number" value="1">
+        <!-- colocar o coeficiente c e o button aqui -->
+        <label for="coeficientes-c" class="matematica">c</label>
+        <input id="coeficientes-c" type="number" value="1">
+        <button id="resolver-button">Resolver!</button>
+      </section>
+      <section id="resultado">
+        O resultado é:
+        <ul>
+          <li>
+            <span class="matematica">Δ </span>: <input id="resultado-delta" type="number" disabled>
+            <span class="matematica">Δ = b<sup>2</sup> - 4ac</span>
+          </li>
+          <li>
+            <span class="matematica">x<sub>1</sub></span>: <input id="resultado-x1" type="number" disabled>
+            <span class="matematica">x<sub>1</sub> = (-b + √Δ)/2a</span>
+          </li>
+          <li>
+            <span class="matematica">x<sub>2</sub></span>: <input id="resultado-x2" type="number" disabled>
+            <span class="matematica">x<sub>2</sub> = (-b - √Δ)/2a</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="action.js"></script>
+
+  </body>
+</html>
